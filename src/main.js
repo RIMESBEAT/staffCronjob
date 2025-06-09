@@ -1,8 +1,12 @@
 import { Client, Databases, Query } from "node-appwrite";
 
-const PROJECT_ID = process.env.PROJECT_ID;
-const STAFFDB = process.env.STAFFDB;
-const STAFFCOLLECTION = process.env.STAFFCOLLECTION;
+// const FASTDB = process.env.FASTDB;
+// const LOANDATA = process.env.LOANDATA;
+// const PROJECT_ID = process.env.PROJECT_ID;
+
+const PROJECT_ID = "6570e97d59a51670161b";
+const STAFFDB = "6616e3c0bc01f963fe75";
+const STAFFCOLLECTION = "6616e3de90aea0072240";
 
 export default async ({ req, res, log, error }) => {
   const client = new Client()
@@ -28,7 +32,7 @@ export default async ({ req, res, log, error }) => {
         STAFFCOLLECTION,
         data.id,
         {
-          taskId: ["11"],
+          taskId: [],
         }
       );
     });
