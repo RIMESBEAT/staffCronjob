@@ -28,7 +28,7 @@ export default async ({ req, res, log, error }) => {
         STAFFCOLLECTION,
         data.id,
         {
-          taskId: [],
+          taskId: ["11"],
         }
       );
     });
