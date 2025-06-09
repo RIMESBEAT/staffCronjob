@@ -4,9 +4,9 @@ import { Client, Databases, Query } from "node-appwrite";
 // const LOANDATA = process.env.LOANDATA;
 // const PROJECT_ID = process.env.PROJECT_ID;
 
-const PROJECT_ID = "6570e97d59a51670161b";
-const STAFFDB = "6616e3c0bc01f963fe75";
-const STAFFCOLLECTION = "6616e3de90aea0072240";
+const PROJECT_ID = process.env.PROJECT_ID;
+const STAFFDB = process.env.STAFFDB;
+const STAFFCOLLECTION = process.env.STAFFCOLLECTION;
 
 export default async ({ req, res, log, error }) => {
   const client = new Client()
